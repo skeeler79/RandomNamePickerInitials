@@ -1,23 +1,23 @@
 const mathAll = [
     {
         id: 1,
-        firstName: "Robert" ,
-        lastName: "Daniels" ,
+        firstName: "Robert",
+        lastName: "Daniels",
         category: "all",
         period6: false,
     },
     {
         id: 2,
-        firstName: "Hunter" ,
-        lastName: "Le", 
+        firstName: "Hunter",
+        lastName: "Le",
         category: "all",
         period6: false,
 
     },
     {
         id: 3,
-        firstName: "Samuel" ,
-        lastName: "Sze" ,
+        firstName: "Samuel",
+        lastName: "Sze",
         category: "all",
         period6: true,
 
@@ -32,40 +32,40 @@ const mathAll = [
     },
     {
         id: 5,
-        firstName: "Madeline" ,
-        lastName: "Bruder" ,
+        firstName: "Madeline",
+        lastName: "Bruder",
         category: "all",
         period6: false,
 
     },
     {
         id: 6,
-        firstName: "Alexa" ,
-        lastName: "Katz" ,
+        firstName: "Alexa",
+        lastName: "Katz",
         category: "all",
         period6: false,
 
     },
     {
         id: 7,
-        firstName: "Jason" ,
-        lastName: "McCall" ,
+        firstName: "Jason",
+        lastName: "McCall",
         category: "all",
         period6: false,
- 
+
     },
     {
         id: 8,
         firstName: "Xenia",
-        lastName: "San Chirico" ,
+        lastName: "San Chirico",
         category: "all",
         period6: true,
 
     },
     {
         id: 9,
-        firstName: "Lena" ,
-        lastName: "Hershon" ,
+        firstName: "Lena",
+        lastName: "Hershon",
         category: "all",
         period6: false,
 
@@ -73,7 +73,7 @@ const mathAll = [
     {
         id: 10,
         firstName: "Nina",
-        lastName: "Caron" ,
+        lastName: "Caron",
         category: "all",
         period6: true,
 
@@ -332,68 +332,82 @@ const container = document.querySelector('.btn-container')
 //this function runs when the window loads
 window.addEventListener('DOMContentLoaded', function () {
     displayNames(mathAll);
-    // getNames();
+   
 
 
 });
 
 function displayNames(individual) {
-    let displayIndividual = individual.map(function (item) {
-        console.log(item)
-        return `<article class="menu-item">
+
+    individual = 
+    individual[Math.floor(Math.random() *individual.length)]
+    console.log(individual);
+
+
+      let randomIndividual = `<article class="menu-item">
     
     <div class="item-info">
       <header>
-        <h4>${item.firstName}</h4>
-        <h4>${item.lastName}</h4>
+        <h4>${individual.firstName }</h4>
+        <h4>${individual.lastName}</h4>
       </header>
     </div>
   </article>`;
-    });
-    //joining the array creates one long string
-    displayIndividual = displayIndividual.join('');
+
 
     //this puts the displayMenu array into the sectionCenter class in the HTML like magic
-    sectionCenter.innerHTML = displayIndividual
+    sectionCenter.innerHTML = randomIndividual
 }
 
-// function displayMenuButtons() {
-//     const categories = menu.reduce(function (values, item) { //values is total, item is for each item
-//         if (!values.includes(item.category)) {
-//             values.push(item.category);
-//         }
-//         return values;
-//     }, ['all'] //all is the initialized value in the array of buttons
-//     );
-//     console.log(categories)
-
-//     const categoryBtns = categories.map(function (category) {
-//         return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`
-//     }).join('');
-//     container.innerHTML = categoryBtns;
-//     //buttons are selected after they've been added dynamically, cannot be accessed before
-    const filterBtns = document.querySelectorAll('.filter-btn');
-
-//     console.log(categoryBtns)
+// 
+const filterBtns = document.querySelectorAll('.filter-btn');
 
 
-    //this listens for filter button clicks
-    // function getNames(){
-    filterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            const category = e.currentTarget.dataset.id;
-            const period6 = mathAll.filter(function (individuals) {
-                if (individuals.period6 === true){
-                    return individuals
-                }
-            });
+
+
+//this listens for filter button clicks
+// function getNames(){
+filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        const category = e.currentTarget.dataset.id;
+        
+        // const period6 = mathAll.period6 === true;
+        // console.log(period6);
+            
+
+
+        let period6 = mathAll.filter(function (individuals) {
+            
+            return individuals.period6 === true;
+            // const newArr = [];
+            // if (individuals.period6 === true) {
+
+            //     // return individuals
+            //     for (let i=0; i < individuals.length; i++){
+            //         newArr.push([i]);
+            //     }
+                
+            //     console.log(newArr);
+                // let randomArr = newArr[Math.floor(Math.random() * newArr.length)];
+                // console.log(randomArr);
+            // }
+            //  for (let i = 0; i)
+
+            // let newRandomArr = randomArr[Math.floor(Math.random * randomArr.length)];
+            // console.log(newRandomArr);
+            
+        });
+        // const randomArr = period6[Math.floor(Math.random() * period6.length)]
+        // console.log(randomArr);
+
         if (category === 'all') {
             displayNames(mathAll)
-        }else{
-            displayNames(period6)
+        } else {
+            
+            displayNames(period6);
         }
-            });
-        });
+    });
+});
     // }
             // if (category === "all") {
             //     //call the map function below

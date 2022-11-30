@@ -4,60 +4,79 @@ const mathAll = [
         firstName: "Robert" ,
         lastName: "Daniels" ,
         category: "all",
+        period6: true,
     },
     {
         id: 2,
         firstName: "Hunter" ,
         lastName: "Le", 
         category: "all",
+        period6: false,
+
     },
     {
         id: 3,
         firstName: "Samuel" ,
         lastName: "Sze" ,
         category: "all",
+        period6: false,
+
     },
     {
         id: 4,
         firstName: "Dylan",
         lastName: "Barajas Hu",
         category: "all",
+        period6: false,
+
     },
     {
         id: 5,
         firstName: "Madeline" ,
         lastName: "Bruder" ,
         category: "all",
+        period6: false,
+
     },
     {
         id: 6,
         firstName: "Alexa" ,
         lastName: "Katz" ,
         category: "all",
+        period6: false,
+
     },
     {
         id: 7,
         firstName: "Jason" ,
         lastName: "McCall" ,
-        category: "all", 
+        category: "all",
+        period6: false,
+ 
     },
     {
         id: 8,
         firstName: "Xenia",
         lastName: "San Chirico" ,
         category: "all",
+        period6: false,
+
     },
     {
         id: 9,
         firstName: "Lena" ,
         lastName: "Hershon" ,
         category: "all",
+        period6: false,
+
     },
     {
         id: 10,
         firstName: "Nina",
         lastName: "Caron" ,
         category: "all",
+        period6: false,
+
     },
 
     {
@@ -65,60 +84,80 @@ const mathAll = [
         firstName: "Daniel",
         lastName: "Seltzer",
         category: "all",
+        period6: false,
+
     },
     {
         id: 12,
         firstName: "Paige",
         lastName: "Scheuerman",
         category: "all",
+        period6: false,
+
     },
     {
         id: 13,
         firstName: "Lillie",
         lastName: "Niescior",
         category: "all",
+        period6: false,
+
     },
     {
         id: 14,
         firstName: "Eloise",
         lastName: "Pahys Hu",
         category: "all",
+        period6: false,
+
     },
     {
         id: 15,
         firstName: "Chase",
         lastName: "Burnett",
         category: "all",
+        period6: false,
+
     },
     {
         id: 16,
         firstName: "Gus",
         lastName: "Tsiotsias",
         category: "all",
+        period6: false,
+
     },
     {
         id: 17,
         firstName: "Zoe",
         lastName: "Donnelly",
         category: "all",
+        period6: false,
+
     },
     {
         id: 18,
         firstName: "Lillian",
         lastName: "Bernstein",
         category: "all",
+        period6: false,
+
     },
     {
         id: 19,
         firstName: "Wiley",
         lastName: "Hunsicker",
         category: "all",
+        period6: false,
+
     },
     {
         id: 20,
         firstName: "Patrick",
         lastName: "Sullivan",
         category: "all",
+        period6: false,
+
     },
 
     {
@@ -126,60 +165,80 @@ const mathAll = [
         firstName: "George",
         lastName: "Neustadter",
         category: "all",
+        period6: false,
+
     },
     {
         id: 22,
         firstName: "Zurri",
         lastName: "Armstead",
         category: "all",
+        period6: false,
+
     },
     {
         id: 23,
         firstName: "Ava",
         lastName: "Gallagher",
         category: "all",
+        period6: false,
+
     },
     {
         id: 24,
         firstName: "Nina",
         lastName: "Chavchanidze",
         category: "all",
+        period6: false,
+
     },
     {
         id: 25,
         firstName: "Tenzin",
         lastName: "Namkha",
         category: "all",
+        period6: false,
+
     },
     {
         id: 26,
         firstName: "Uwais",
         lastName: "Bell",
         category: "all",
+        period6: false,
+
     },
     {
         id: 27,
         firstName: "Sid",
         lastName: "Adler",
         category: "all",
+        period6: false,
+
     },
     {
         id: 28,
         firstName: "Elodie",
         lastName: "Ives",
         category: "all",
+        period6: false,
+
     },
     {
         id: 29,
         firstName: "Rachel",
         lastName: "Bellamy",
         category: "all",
+        period6: false,
+
     },
     {
         id: 30,
         firstName: "Gavin",
         lastName: "Broscious",
         category: "all",
+        period6: false,
+
     },
 
     {
@@ -187,60 +246,80 @@ const mathAll = [
         firstName: "Molly",
         lastName: "Mathias",
         category: "all",
+        period6: false,
+
     },
     {
         id: 32,
         firstName: "Katherine",
         lastName: "Mathias",
         category: "all",
+        period6: false,
+
     },
     {
         id: 33,
         firstName: "Sophie",
         lastName: "Burns",
         category: "all",
+        period6: false,
+
     },
     {
         id: 34,
         firstName: "Annie",
         lastName: "Vicki",
         category: "all",
+        period6: false,
+
     },
     {
         id: 35,
         firstName: "Charlotte",
         lastName: "Abraham",
         category: "all",
+        period6: false,
+
     },
     {
         id: 36,
         firstName: "Neve",
         lastName: "Funt",
         category: "all",
+        period6: false,
+
     },
     {
         id: 37,
         firstName: "Carlo",
         lastName: "DeSipio",
         category: "all",
+        period6: false,
+
     },
     {
         id: 38,
         firstName: "Aidan",
         lastName: "Reilly",
         category: "all",
+        period6: false,
+
     },
     {
         id: 39,
         firstName: "Micah",
         lastName: "Gardner",
         category: "all",
+        period6: false,
+
     },
     {
         id: 40,
         firstName: "Declan",
         lastName: "Tarity",
         category: "all",
+        period6: false,
+
     }
 ];
 
@@ -253,7 +332,7 @@ const container = document.querySelector('.btn-container')
 //this function runs when the window loads
 window.addEventListener('DOMContentLoaded', function () {
     displayNames(mathAll);
-    // displayMenuButtons();
+    // getNames();
 
 
 });
@@ -293,20 +372,29 @@ function displayNames(individual) {
 //     }).join('');
 //     container.innerHTML = categoryBtns;
 //     //buttons are selected after they've been added dynamically, cannot be accessed before
-//     const filterBtns = document.querySelectorAll('.filter-btn');
+    const filterBtns = document.querySelectorAll('.filter-btn');
 
 //     console.log(categoryBtns)
 
 
     //this listens for filter button clicks
+    // function getNames(){
     filterBtns.forEach(function (btn) {
         btn.addEventListener('click', function (e) {
             const category = e.currentTarget.dataset.id;
-            mathAll.filter(function (individual) {
-                if (individual.category === category) {
-                    return individual
+            const period6 = mathAll.filter(function (individuals) {
+                if (individuals.period6 === true){
+                    return individuals
                 }
             });
+        if (category === 'all') {
+            displayNames(mathAll)
+        }else{
+            displayNames(period6)
+        }
+            });
+        });
+    // }
             // if (category === "all") {
             //     //call the map function below
             //     displayMenuItems(menu)
@@ -314,5 +402,5 @@ function displayNames(individual) {
             //     //run the filter
             //     displayMenuItems(menuCategory);
             // }
-        });
-    });
+    //     });
+    // });

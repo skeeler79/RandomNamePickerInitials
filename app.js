@@ -4,7 +4,7 @@ const mathAll = [
         firstName: "Robert" ,
         lastName: "Daniels" ,
         category: "all",
-        period6: true,
+        period6: false,
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const mathAll = [
         firstName: "Samuel" ,
         lastName: "Sze" ,
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -59,7 +59,7 @@ const mathAll = [
         firstName: "Xenia",
         lastName: "San Chirico" ,
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -75,7 +75,7 @@ const mathAll = [
         firstName: "Nina",
         lastName: "Caron" ,
         category: "all",
-        period6: false,
+        period6: true,
 
     },
 
@@ -84,7 +84,7 @@ const mathAll = [
         firstName: "Daniel",
         lastName: "Seltzer",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -92,7 +92,7 @@ const mathAll = [
         firstName: "Paige",
         lastName: "Scheuerman",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -132,7 +132,7 @@ const mathAll = [
         firstName: "Zoe",
         lastName: "Donnelly",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -181,7 +181,7 @@ const mathAll = [
         firstName: "Ava",
         lastName: "Gallagher",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -189,7 +189,7 @@ const mathAll = [
         firstName: "Nina",
         lastName: "Chavchanidze",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -205,7 +205,7 @@ const mathAll = [
         firstName: "Uwais",
         lastName: "Bell",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -221,7 +221,7 @@ const mathAll = [
         firstName: "Elodie",
         lastName: "Ives",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -229,7 +229,7 @@ const mathAll = [
         firstName: "Rachel",
         lastName: "Bellamy",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -246,7 +246,7 @@ const mathAll = [
         firstName: "Molly",
         lastName: "Mathias",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -262,7 +262,7 @@ const mathAll = [
         firstName: "Sophie",
         lastName: "Burns",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -270,7 +270,7 @@ const mathAll = [
         firstName: "Annie",
         lastName: "Vicki",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -294,7 +294,7 @@ const mathAll = [
         firstName: "Carlo",
         lastName: "DeSipio",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -302,7 +302,7 @@ const mathAll = [
         firstName: "Aidan",
         lastName: "Reilly",
         category: "all",
-        period6: false,
+        period6: true,
 
     },
     {
@@ -318,7 +318,7 @@ const mathAll = [
         firstName: "Declan",
         lastName: "Tarity",
         category: "all",
-        period6: false,
+        period6: true,
 
     }
 ];

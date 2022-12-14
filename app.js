@@ -366,8 +366,7 @@ function displayNames(individual) {
         `<article class="menu-item">
         <div class="item-info">
             <header>
-            <h4>${individualName.firstName}</h4>
-            <h4>${individualName.lastName}</h4>
+            <h4>${individualName.firstName} ${individualName.lastName}</h4>
             </header>
         </div>
         </article>`

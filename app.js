@@ -330,10 +330,10 @@ const container = document.querySelector('.btn-container')
 
 
 //this function runs when the window loads
-window.addEventListener('DOMContentLoaded', function () {
-    displayNames(mathAll);
+// window.addEventListener('DOMContentLoaded', function () {
+//     displayNames(mathAll);
 
-});
+// });
 
 const chosen = new Set();
 

@@ -338,31 +338,7 @@ window.addEventListener('DOMContentLoaded', function () {
 const chosen = new Set();
 
 function displayNames(individual) {
-
-    // function displayMenuButtons() {
-    //     const categories = menu.reduce(function (values, item) { //values is total, item is for each item
-    //         if (!values.includes(item.category)) {
-    //             values.push(item.category);
-    //         }
-
     
-       
-    
-        // return function () {
-        //     if (copy.length < 1) { copy = individual.slice(0); }
-        //     let index = Math.floor(Math.random() * copy.length);
-        //     let item = copy[index];
-        //     copy.splice(index, 1);
-        //     console.log(item);
-        // };
-        
-
-
-    // while (individual.length) {
-    //     let random = Math.floor(Math.random() * individual.length);
-    //     let eliminate = individual.splice(random, 1)[0];
-    //     console.log(eliminate);
-    // }
 
     if (chosen.size === individual.length){
         let noMoreNames = 
@@ -420,12 +396,6 @@ function displayNames(individual) {
     //     }
     //     return selected;
     // });
-
-    
-
-
-
-
     
 }
 
@@ -448,8 +418,11 @@ filterBtns.forEach(function (btn) {
 
 
         });
-
-        if (category === 'all') {
+        if (category === 'clear'){
+            sectionCenter.innerHTML = ''
+            return chosen.clear();
+        }
+        else if (category === 'all') {
             displayNames(mathAll)
         } else {
 

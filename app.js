@@ -332,32 +332,103 @@ const container = document.querySelector('.btn-container')
 //this function runs when the window loads
 window.addEventListener('DOMContentLoaded', function () {
     displayNames(mathAll);
-   
-
 
 });
 
+const chosen = new Set();
+
 function displayNames(individual) {
 
-    individual = 
-    individual[Math.floor(Math.random() *individual.length)]
-    console.log(individual);
+    // function displayMenuButtons() {
+    //     const categories = menu.reduce(function (values, item) { //values is total, item is for each item
+    //         if (!values.includes(item.category)) {
+    //             values.push(item.category);
+    //         }
 
-
-      let randomIndividual = `<article class="menu-item">
     
-    <div class="item-info">
-      <header>
-        <h4>${individual.firstName }</h4>
-        <h4>${individual.lastName}</h4>
-      </header>
-    </div>
-  </article>`;
+       
+    
+        // return function () {
+        //     if (copy.length < 1) { copy = individual.slice(0); }
+        //     let index = Math.floor(Math.random() * copy.length);
+        //     let item = copy[index];
+        //     copy.splice(index, 1);
+        //     console.log(item);
+        // };
+        
 
+
+    // while (individual.length) {
+    //     let random = Math.floor(Math.random() * individual.length);
+    //     let eliminate = individual.splice(random, 1)[0];
+    //     console.log(eliminate);
+    // }
+
+    if (chosen.size === individual.length){
+        let noMoreNames = 
+            `<article class="menu-item">
+        <div class="item-info">
+            <header>
+            <h4>No More Names!</h4>
+            </header>
+        </div>
+        </article>`
+        sectionCenter.innerHTML = noMoreNames
+
+        return null;
+    }
+
+    let individualName =
+        individual[Math.floor(Math.random() * individual.length)]
+    console.log(individualName);
+
+    while (chosen.has(individualName)) {
+        individualName = individual[Math.floor(Math.random() * individual.length)]
+    }   
+    let randomIndividual =
+
+        `<article class="menu-item">
+        <div class="item-info">
+            <header>
+            <h4>${individualName.firstName}</h4>
+            <h4>${individualName.lastName}</h4>
+            </header>
+        </div>
+        </article>`
 
     //this puts the displayMenu array into the sectionCenter class in the HTML like magic
     sectionCenter.innerHTML = randomIndividual
+
+    chosen.add(individualName)
+    
+    console.log(chosen)
+    return individualName
+
+    
+    // let newArr = []
+    // newArr.push(individual)
+    // let uniqueIndividual = [];
+    // for (let i = 0; i <= mathAll.length; i++){
+    //     if (!uniqueIndividual.)
+    // }
+
+    // mathAll.reduce(function (selected, next) {
+    //     if (!selected.includes(next)) {
+    //         selected.push(next);
+    //         selected[Math.floor(Math.random()*selected.length)]
+
+    //     }
+    //     return selected;
+    // });
+
+    
+
+
+
+
+    
 }
+
 
 // 
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -370,40 +441,18 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
         const category = e.currentTarget.dataset.id;
-        
-        // const period6 = mathAll.period6 === true;
-        // console.log(period6);
-            
 
-
+       
         let period6 = mathAll.filter(function (individuals) {
-            
             return individuals.period6 === true;
-            // const newArr = [];
-            // if (individuals.period6 === true) {
 
-            //     // return individuals
-            //     for (let i=0; i < individuals.length; i++){
-            //         newArr.push([i]);
-            //     }
-                
-            //     console.log(newArr);
-                // let randomArr = newArr[Math.floor(Math.random() * newArr.length)];
-                // console.log(randomArr);
-            // }
-            //  for (let i = 0; i)
 
-            // let newRandomArr = randomArr[Math.floor(Math.random * randomArr.length)];
-            // console.log(newRandomArr);
-            
         });
-        // const randomArr = period6[Math.floor(Math.random() * period6.length)]
-        // console.log(randomArr);
 
         if (category === 'all') {
             displayNames(mathAll)
         } else {
-            
+
             displayNames(period6);
         }
     });

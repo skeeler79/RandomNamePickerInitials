@@ -5,6 +5,7 @@ const mathAll = [
         lastName: "Daniels",
         category: "all",
         period6: false,
+        
     },
     {
         id: 2,
@@ -414,18 +415,22 @@ filterBtns.forEach(function (btn) {
        
         let period6 = mathAll.filter(function (individuals) {
             return individuals.period6 === true;
-
-
         });
+        let period3 = mathAll.filter(function(individuals){
+            return individuals.period6 === false;
+        });
+
         if (category === 'clear'){
             sectionCenter.innerHTML = ''
             return chosen.clear();
         }
         else if (category === 'all') {
             displayNames(mathAll)
-        } else {
+        } else if (category === 'per6'){
 
             displayNames(period6);
+        } else if (category === 'per3'){
+            displayNames(period3)
         }
     });
 });

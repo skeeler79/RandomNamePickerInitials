@@ -346,7 +346,7 @@ function displayNames(individual) {
             `<article class="menu-item">
         <div class="item-info">
             <header>
-            <h4>No More Names!</h4>
+            <h3>No More Names!</h3>
             </header>
         </div>
         </article>`
@@ -367,7 +367,7 @@ function displayNames(individual) {
         `<article class="menu-item">
         <div class="item-info">
             <header>
-            <h4>${individualName.firstName} ${individualName.lastName}</h4>
+            <h3>${individualName.firstName} ${individualName.lastName}</h3>
             </header>
         </div>
         </article>`
@@ -379,28 +379,10 @@ function displayNames(individual) {
     
     console.log(chosen)
     return individualName
-
-    
-    // let newArr = []
-    // newArr.push(individual)
-    // let uniqueIndividual = [];
-    // for (let i = 0; i <= mathAll.length; i++){
-    //     if (!uniqueIndividual.)
-    // }
-
-    // mathAll.reduce(function (selected, next) {
-    //     if (!selected.includes(next)) {
-    //         selected.push(next);
-    //         selected[Math.floor(Math.random()*selected.length)]
-
-    //     }
-    //     return selected;
-    // });
     
 }
 
 
-// 
 const filterBtns = document.querySelectorAll('.filter-btn');
 
 
@@ -434,13 +416,4 @@ filterBtns.forEach(function (btn) {
         }
     });
 });
-    // }
-            // if (category === "all") {
-            //     //call the map function below
-            //     displayMenuItems(menu)
-            // } else {
-            //     //run the filter
-            //     displayMenuItems(menuCategory);
-            // }
-    //     });
-    // });
+    
